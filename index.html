@@ -97,7 +97,7 @@
       font-family: var(--heading);
       letter-spacing: 0;
       font-weight: 900;
-      line-height: .92;
+      line-height: 1.42;
       overflow-wrap: normal;
       word-break: normal;
       hyphens: none;
@@ -107,16 +107,18 @@
       max-width: 1120px;
       margin-bottom: 28px;
       font-size: clamp(54px, 8.8vw, 126px);
+      line-height: 1.42;
     }
     h2 {
       max-width: 980px;
       margin-bottom: 28px;
       font-size: clamp(42px, 6.2vw, 82px);
+      line-height: 1.42;
     }
     h3 {
       margin-bottom: 14px;
       font-size: 34px;
-      line-height: .96;
+      line-height: 1.42;
     }
     p {
       color: var(--muted);
@@ -254,7 +256,7 @@
       color: rgba(255, 253, 248, .92);
       font-family: var(--heading);
       font-size: 146px;
-      line-height: .82;
+      line-height: 1;
     }
     @keyframes field {
       from { opacity: .38; transform: scale(.96) rotate(-4deg); }
@@ -280,7 +282,7 @@
       backdrop-filter: blur(14px);
     }
     .metric {
-      min-height: 116px;
+      min-height: 136px;
       padding: 18px;
       border-right: 1px solid var(--line);
       display: flex;
@@ -291,7 +293,7 @@
     .metric b {
       font-family: var(--heading);
       font-size: 34px;
-      line-height: .9;
+      line-height: 1.22;
     }
 
     .sticky-summary {
@@ -386,7 +388,7 @@
     .tradition strong {
       font-family: var(--heading);
       font-size: 66px;
-      line-height: .9;
+      line-height: 1;
     }
 
     .audience { background: var(--milk); }
@@ -463,7 +465,7 @@
     .chakra-row b {
       font-family: var(--heading);
       font-size: 42px;
-      line-height: .9;
+      line-height: 1.04;
     }
     .chakra-row p { margin: 0; }
     .tone {
@@ -579,7 +581,7 @@
     .place-row b {
       font-family: var(--heading);
       font-size: 30px;
-      line-height: .94;
+      line-height: 1.06;
     }
     .place-row p { margin: 0; font-size: 15px; }
 
@@ -616,17 +618,18 @@
       background: rgba(255, 255, 255, .14);
     }
     .price-row {
-      min-height: 104px;
+      min-height: 138px;
       padding: 18px;
       background: var(--night);
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      gap: 12px;
     }
     .price-row b {
       font-family: var(--heading);
       font-size: 28px;
-      line-height: .95;
+      line-height: 1.42;
     }
 
     .faq-grid {
@@ -649,8 +652,9 @@
       align-items: center;
       font-family: var(--heading);
       font-size: 26px;
-      line-height: 1;
+      line-height: 1.42;
     }
+    details:not([open]) p { display: none; }
     summary::-webkit-details-marker { display: none; }
     summary::after {
       content: "+";
@@ -767,7 +771,7 @@
       .facilitator-photo { min-height: 420px; padding: 30px; }
       .facilitator-photo img { width: min(100%, 300px); }
       .place-row { grid-template-columns: 1fr; }
-      summary { font-size: 22px; }
+      summary { font-size: 22px; line-height: 1.42; }
       .btn-row .btn { width: 100%; }
     }
   </style>
